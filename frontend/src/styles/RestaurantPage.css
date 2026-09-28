@@ -1,0 +1,461 @@
+.details-page{
+    margin:30px 60px;
+    font-family:Arial,Helvetica,sans-serif;
+}
+.restaurant-top{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    margin-bottom:30px;
+}
+.restaurant-logo{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+.restaurant-data{
+    flex:1;
+    position: relative;
+}
+.page-sides{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.page-sides .fav-btn{
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.res-name{
+    font-size:40px;
+    margin:0;
+}
+
+.opened,.close{
+    color:white;
+    padding:5px 12px;
+    border-radius:4px;
+    font-size:14px;
+    margin-right: 20px;
+}
+
+.opened{
+    background:#16a34a;
+}
+
+.close{
+    background:#dc2626;
+}
+
+.restaurant-description{
+    margin:10px 0;
+    color:#555;
+    line-height:1.5;
+}
+
+.restaurant-cuisine{
+    margin:8px 0;
+    font-weight:600;
+}
+
+.restaurant-address{
+    color:#666;
+    margin:8px 0;
+}
+
+.restaurant-info{
+    display:flex;
+    gap:25px;
+    margin:20px 0;
+    font-weight:600;
+}
+
+.restaurant-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.restaurant-buttons button{
+    padding:10px 18px;
+    background:#FF6B00;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.restaurant-buttons button:hover{
+    background:#e65f00;
+}
+.tabs {
+    margin: 20px;
+    padding:0px 40px;
+    border-bottom: 0.5px solid #4f46a5;
+    border-top: 0.5px solid #4f46a5;
+}
+.tabs button{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    margin: 0px 10px;
+    padding: 10px 20px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 1px;
+}
+.tabs button.active{
+    background: linear-gradient(#4f46a509,#4f46a519,#4f46a565);
+    color: #4f46a5;
+    background-color: transparent;
+    border-bottom: 3px solid #4f46a5;
+}
+.menu-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    margin: 10px 70px 10px 40px;
+}
+.menu-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 40px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    background:white;
+    position: relative;
+}
+.item-name{
+    font-size:22px;
+    margin-bottom:8px;
+}
+.item-price{
+    font-weight:bold;
+    margin:8px 0;
+    font-size: 19px;
+}
+.rating.inpage{
+    margin-left: 15px;
+}
+.item-description{
+    color:#666;
+    margin:10px 0;
+    line-height:1.4;
+}
+.veg,.nveg{
+    font-weight:bold;
+    font-size: 13px;
+    background-color: green;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    margin:0px 0px 0px 30px;
+}
+.veg{
+    background-color: green;
+}
+.nveg{
+    background-color: red;
+}
+.available{
+    color:green;
+    font-weight:bold;
+}
+.unavailable{
+    color:red;
+    font-weight:bold;
+}
+.menu-right{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.menu-right img{
+    width:180px;
+    height:140px;
+    object-fit:cover;
+    border-radius:10px;
+    margin: 20px;
+}
+.add-btn,.quantity-box{
+    position: absolute;
+    bottom: 13px;
+}
+.add-btn{
+    margin-top:10px;
+    padding:10px 35px;
+    border:none;
+    border-radius:6px;
+    background:#fff;
+    color:green;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+.quantity-box{
+    margin-top:10px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:#fff;
+    padding:5px 8px;
+    border-radius:6px;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+.add,
+.remove{
+    width:25px;
+    height:25px;
+    border:none;
+    border-radius:50%;
+    background:#f1f1f1;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.add:hover{
+    background:#d1fae5;
+}
+
+.remove:hover{
+    background:#fee2e2;
+}
+
+.photo-gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+    gap:20px;
+}
+
+.photo-card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.photo-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.photo-card p{
+    text-align:center;
+    padding:10px;
+    font-weight:bold;
+}
+.Hygenie{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.details-page{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.res-name{
+    font-size: 40px;
+}
+.rating{
+    background-color: green;
+    padding: 5px 8px;
+    border-radius: 3px;
+    color: white;
+}
+.side-det{
+    position: absolute;
+    right: 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.veg,.nonveg{
+    padding: 5px 8px;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+}
+.veg{
+    background-color: green;
+}
+.opened{
+    background-color: green;
+}
+.opened,.close{
+    font-size: 15px;
+    color: white;
+    font-size: 13px;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 0px 0px 0px 10px;
+}
+.close{
+    background-color: red;
+}
+.shortMenu{
+    margin: 5px 0px;
+    font-size: 17px;
+}
+.det-btn button{
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    background-color: #FF6B00;
+    color: white;
+}
+.tabs{
+    margin: 20px;
+}
+.tab-btn{
+    padding:0px 40px;
+    border-bottom: 0.5px solid #4f46a5;
+    border-top: 0.5px solid #4f46a5;
+}
+.tabs .photos,.tabs .menu{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    margin: 0px 10px;
+    padding: 10px 20px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 1px;
+}
+.tabs .tab-btn button.active{
+    background: linear-gradient(#4f46a509,#4f46a519,#4f46a565);
+    color: #4f46a5;
+    background-color: transparent;
+    border-bottom: 3px solid #4f46a5;
+}
+.menu-list{
+    margin: 20px 50px 30px 50px;
+}
+.menu-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    width: 50vw;
+    border-bottom: 0.5px solid #4f46a5;
+    justify-content: space-between;
+}
+.item-name{
+    font-size: 20px;
+    margin: 6px 0px;
+    letter-spacing: 0.45px;
+}
+.item-price{
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    margin: 0px 0px 8px 0px;
+    color: rgb(67, 66, 66);
+}
+.item-rating{
+    font-size: 14px;
+    color: green;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+.item-rating i{
+    font-size: 12px;
+}
+.item-description{
+    color: rgb(106, 106, 106);
+    font-size: 15px;
+}
+.menu-item img{
+    width: 170px;
+    height: 120px;
+    border-radius: 8px;
+}
+.menu-item div{
+    position: relative;
+}
+.menu-item div .add-btn,
+.menu-item div div{
+    position: absolute;
+    bottom: -10px;
+    background-color: rgb(225, 224, 224);
+    left: 25%;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    color: green;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+}
+.menu-item div div{
+    padding: 5px 12px;
+}
+.menu-item .add,.menu-item .remove{
+    background-color: rgb(225, 224, 224);
+    padding: 2px;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.menu-item .add:hover{
+    background-color: rgba(255, 0, 0, 0.3);
+}
+.menu-item .remove:hover{
+    background-color:rgba(0, 128, 0, 0.3);
+}
+.quantity{
+    padding: 0px 5px;
+}*/

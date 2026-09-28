@@ -1,0 +1,495 @@
+.profile-page{
+    padding: 30px 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+.profile-banner{
+    background-image: url(../assets/profile\ banner.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 30px 50px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+.profile-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1); /* opacity control */
+  border-radius: 10px;
+}
+.profile-banner img{
+    height: 150px;
+    width: 150px;
+    border: 2px solid #4f46a5;
+    border-radius: 50%;
+    margin: 30px;
+    background-color: rgb(240, 236, 236);
+}
+.profile-banner h1{
+    margin-bottom: 8px;
+    margin-left: 10px;
+    font-size: 27px;
+    color: rgb(182, 10, 10);
+}
+.profile-banner h2{
+    margin-bottom: 6px;
+    margin-left: 10px;
+    font-size: 23px;
+    color: #4f46a5;
+}
+.profile-banner .username{
+    font-size: 35px;
+    margin-left: 10px;
+    color: orangered;
+}
+.profile-banner button{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6a00;
+    color: white;
+    cursor: pointer;
+}
+.profile-right{
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    font-weight: bold;
+    color: #4f46a5;
+}
+.profile-content{
+    margin: 30px 0px;
+    display: flex;
+}
+.left-section{
+    background-color: white;
+    flex: 1;
+    height: 100%;
+}
+.left-section div{
+    flex: 1;
+    padding: 20px 40px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+.right-section{
+    flex: 3;
+    background-color: white;
+    margin-left: 20px;
+}
+.profile-active{
+    border-left: 4px solid #4f46a5;
+    background: linear-gradient(
+    to right,
+    rgba(79, 70, 165, 0.15),
+    rgba(79, 70, 165, 0.05)
+  );
+    color: #4f46a5;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.2s ease-in;
+}
+.profile-section,.address-section,.profile-orders-section,.wishlist-section,.settings-section{
+    padding: 40px 50px;
+    position: relative;
+}
+.profile-section input{
+    padding: 8px;
+    background-color: azure;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    width: 60%;
+    margin: 5px 0px 20px 0px;
+}
+.profile-section hr,.address-section hr,.profile-orders-section hr,.wishlist-section hr,.settings-section hr{
+    margin: 15px 0px;
+}
+.profile-section button{
+    background-color: #ff6a00;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    right: 50px;
+    top: 30px;
+}
+.addAddress{
+    display: flex;
+    flex-direction: column;
+    background-color: #4f46a5;
+    margin: 10px;
+    border-radius:5px;
+    padding: 10px;
+    width: 130px;
+    height: 150px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.addAddress:hover{
+    background-color: #4f46a5d2;
+}
+.addAddress i{
+    padding: 20px;
+    border:2px solid white;
+    border-radius: 50%;
+}
+.addAddress p{
+    font-size: 14px;
+    margin-top: 25px;
+}
+.user-addresses{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.address-card{
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+    width: 130px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+}
+.address-card p{
+    font-size: 14px;
+    margin: 2px;
+}
+.address-card button{
+    padding: 3px;
+    background-color: #4f46a5;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin: 3px;
+}
+.logout{
+    padding: 8px 25px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.default-badge{
+    font-size: 11px;
+    background-color: green;
+    border-radius: 2px;
+    width: 38px;
+    position: absolute;
+    right: 5px;
+    padding:2px 4px;
+    top: 7px;
+    color: white;
+}
+
+
+
+
+
+
+
+.profile-order-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.profile-order-header h2{
+    margin:0;
+    color:#333;
+}
+
+.profile-view-all-btn{
+    padding:8px 16px;
+    background:#4f46a5;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.profile-view-all-btn:hover{
+    background:#3f3790;
+}
+
+.profile-order-card{
+    border:1px solid #ddd;
+    background:#fff;
+    margin:12px 0;
+    padding:20px 25px;
+    transition:.2s;
+    position:relative;
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+}
+
+.profile-order-card:hover{
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+.profile-restaurant-icon{
+    width:85px;
+    height:85px;
+    min-width:85px;
+    border-radius:10px;
+    background:#f3f1ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.profile-restaurant-icon i{
+    font-size:30px;
+    color:#4f46a5;
+}
+
+.profile-order-details{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    min-width:0;
+}
+
+.profile-restaurant-info{
+    margin:2px 0 8px;
+}
+
+.profile-restaurant-info h3{
+    margin:0 0 5px;
+    font-size:18px;
+    color:#333;
+}
+
+.profile-restaurant-info p{
+    margin:0 0 3px;
+    font-size:11px;
+    color:#777;
+    font-weight:600;
+}
+
+.profile-restaurant-info span{
+    font-size:12px;
+    color:#888;
+}
+
+.profile-order-payment{
+    font-size:13px;
+    color:#555;
+    margin:5px 0 10px;
+}
+
+.profile-order-payment strong{
+    color:#333;
+}
+
+.profile-order-divider{
+    border:0;
+    border-top:1px solid #eee;
+    margin:0 0 10px;
+}
+
+.profile-order-items{
+    display:flex;
+    flex-wrap:wrap;
+    gap:5px;
+    margin-bottom:10px;
+}
+
+.profile-order-items p{
+    margin:0;
+    font-size:13px;
+    color:#444;
+}
+
+.profile-order-items p:not(:last-child)::after{
+    content:",";
+}
+
+.profile-order-items .profile-more-items{
+    color:#777;
+    font-weight:600;
+}
+
+.profile-order-items .profile-more-items::after{
+    content:"";
+}
+
+.profile-order-total{
+    font-size:13px;
+    color:#555;
+}
+
+.profile-order-total strong{
+    color:#333;
+    margin-left:5px;
+}
+
+.profile-order-status{
+    position:absolute;
+    top:15px;
+    right:20px;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.profile-order-status i{
+    margin-right:5px;
+}
+
+.profile-order-status.pending{
+    background:#fff7ed;
+    color:#ea580c;
+}
+
+.profile-order-status.accepted{
+    background:#eff6ff;
+    color:#2563eb;
+}
+
+.profile-order-status.preparing{
+    background:#fefce8;
+    color:#ca8a04;
+}
+
+.profile-order-status.ready{
+    background:#f0fdf4;
+    color:#16a34a;
+}
+
+.profile-order-status.picked-up{
+    background:#f5f3ff;
+    color:#7c3aed;
+}
+
+.profile-order-status.delivered{
+    background:#dcfce7;
+    color:#16a34a;
+}
+
+.profile-order-status.cancelled{
+    background:#fef2f2;
+    color:#dc2626;
+}
+
+.profile-order-actions{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    margin-left:auto;
+    align-self:flex-end;
+}
+
+.profile-order-actions button{
+    width:125px;
+    padding:8px 12px;
+    font-size:13px;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.2s;
+}
+
+.profile-reorder-btn{
+    background:orangered;
+    color:white;
+    border:1px solid orangered;
+}
+
+.profile-reorder-btn:hover{
+    background:#e64a00;
+}
+
+.profile-view-details-btn{
+    background:white;
+    color:#4f46a5;
+    border:1px solid #4f46a5;
+}
+
+.profile-view-details-btn:hover{
+    background:#4f46a5;
+    color:white;
+}
+
+@media(max-width:800px){
+    .profile-order-card{
+        padding:18px;
+        gap:15px;
+    }
+
+    .profile-restaurant-icon{
+        width:65px;
+        height:65px;
+        min-width:65px;
+    }
+
+    .profile-restaurant-icon i{
+        font-size:25px;
+    }
+
+    .profile-order-status{
+        position:static;
+        align-self:flex-start;
+    }
+
+    .profile-order-actions{
+        align-self:flex-end;
+    }
+
+    .profile-order-actions button{
+        width:110px;
+    }
+}
+
+@media(max-width:600px){
+    .profile-order-card{
+        display:grid;
+        grid-template-columns:auto 1fr;
+    }
+
+    .profile-order-status{
+        grid-column:2;
+        grid-row:1;
+        justify-self:end;
+    }
+
+    .profile-order-details{
+        grid-column:1 / -1;
+    }
+
+    .profile-order-actions{
+        grid-column:1 / -1;
+        flex-direction:row;
+        margin:5px 0 0;
+    }
+
+    .profile-order-actions button{
+        flex:1;
+        width:auto;
+    }
+}

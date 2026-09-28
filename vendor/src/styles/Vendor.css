@@ -1,0 +1,106 @@
+.vendor-container{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.vendor-login {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vendor-logo {
+    background-color: #4f46a5;
+    color: white;
+    padding: 10px 40px;
+    height: 70px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.vendor-logo .userName{
+    position: absolute;
+    right: 50px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+.userName p{
+    font-size: 17px;
+    margin: 5px;
+}
+.vendor-logo h2,
+.vendor-logo .sub-head{
+    margin: 0;
+}
+
+.vendor-logo h2 {
+    font-size: 30px;
+}
+
+.vendor-logo p:first-child{
+    font-size: 14px;
+}
+.vendor-content {
+    display: flex;
+    flex: 1;
+}
+.vendor-sidebar {
+    padding: 30px 0px 0px 50px;
+    border-right: 2px solid #4f46a5;
+    width: 12%;
+}
+.vendor-sidebar div{
+    border-top: 1.5px solid #4f46a5;
+    border-bottom: 1.5px solid #4f46a5;
+    border-left: 1.5px solid #4f46a5;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 15px 0px 15px 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.vendor-details{
+    padding: 20px 50px;
+    width: 75%;
+}
+.active{
+    background-color: #4f46a5;
+    color: white;
+}
+.vendor-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: 0.5px solid #4f46a5;
+    padding: 20px 30px;
+    margin: 30px;
+}
+.vendor-form h2{
+    margin: 5px 0px 15px 0px;
+}
+.vendor-form input{
+    margin: 7px 0px;
+    padding: 5px;
+}
+.vendor-form button{
+    padding: 7px;
+    margin: 10px 0px;
+    background-color: #4f46a5;
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+.vendor-sidebar div:last-child{
+    background-color: red;
+    color: white;
+    border: red;
+}
+.vendor-sidebar div:last-child{
+    background-color: rgb(232, 35, 35);
+}

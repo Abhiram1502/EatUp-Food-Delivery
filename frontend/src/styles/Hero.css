@@ -1,0 +1,28 @@
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero img{
+    position: relative;
+    margin: 20px;
+    height: 90% ;
+    width: 90%;
+}
+.hero-content{
+    position: absolute;
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    width: 37%;
+    left: 120px;
+}
+.hero-content h1{
+    font-size: 44px;
+    letter-spacing: 1px;
+}
+.hero-content p{
+    font-size: 18px;
+    margin: 7px 0px;
+}

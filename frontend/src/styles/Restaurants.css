@@ -1,0 +1,75 @@
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 10px;
+  position: relative;
+}
+.card-details{
+    padding: 8px 15px 5px 15px;
+}
+.card-details h3{
+    margin: 8px 0px;
+    font-size: 19px;
+}
+.card-details p{
+    margin: 7px 0px;
+}
+.card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.rating{
+  background-color: green;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.rate-det{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.card:hover {
+  transform: scale(1.025);
+}
+.open,.closed{
+    position: absolute;
+    top: 10px;
+    right:9px;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+.shortM,.loc{
+    font-size: 13px;
+    color: grey;
+    margin: 3px 0px;
+}
+.open {
+  background-color: green;
+}
+
+.closed {
+  background-color: red;
+}
+.restaurant-list{
+    margin: 20px 60px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.restaurant-wrapper {
+  position: relative;
+}
+
+.restaurant-list {
+  position: relative;
+  z-index: 1;
+}

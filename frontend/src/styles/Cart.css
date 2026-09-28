@@ -1,0 +1,124 @@
+.cart-section{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 60px;
+}
+.cart-section h1{
+    font-size: 30px;
+    letter-spacing: 0.6px;
+}
+.cart-items{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.cart-item{
+    padding: 13px;
+    border-bottom: 0.5px solid #4f46a5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-item p{
+    flex: 2;
+}
+.cart-item.head{
+    font-weight: bold;
+}
+.cart-item p button{
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.cart-item p button:hover{
+    background-color: rgba(255, 0, 0, 0.300);
+}
+.cart-item p span{
+    padding: 0px 7px;
+}
+.checkout{
+    margin: 40px 20px;
+}
+.checkout h3{
+    font-size: 25px;
+    margin: 10px 0px;
+}
+.promo input{
+    padding: 8px;
+    width: 300px;
+}
+.promo div button{
+    background-color: black;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+.promo div{
+    background-color: black;
+    border-radius: 3px;
+}
+.checkout{
+    display: flex;
+    justify-content: space-between;
+}
+.totals{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-around;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.5px solid#4f46a5;
+}
+.totals p{
+    padding: 12px 50px 12px 20px;
+}
+.row.total{
+    font-weight: bold;
+}
+.totals button{
+    padding: 8px 12px;
+    background-color: #FF6B00;
+    border: none;
+    border-radius: 3px;
+    margin: 20px;
+    width:250px;
+    color: white;
+    font-weight: bold;
+    align-self: flex-end;
+}
+.clearCart,.explore{
+    padding: 8px 20px;
+    background-color: #FF6B00;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    margin: 20px;
+    align-self: flex-end;
+}
+.empty{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.empty img{
+    height: 300px;
+    width: 300px;
+}
+.empty p{
+    margin: 2.5px;
+    color: #4f46a5;
+    font-size: 16px;
+}
+.explore{
+    align-self: center;
+    margin: 20px 0px 10px 0px;
+}
